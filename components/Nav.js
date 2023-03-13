@@ -12,11 +12,9 @@ function Nav() {
     const links = [
         { id: 1, label: 'Home', path: '/' },
         { id: 2, label: 'About us', path: '/about-us' },
-        { id: 3, label: 'Youth ministries', path: 'youth-ministries' },
-        { id: 4, label: 'Women ministries', path: '/women-ministries' },
-        { id: 5, label: 'Giving', path: '/giving' },
-        { id: 7, label: 'Contact', path: '/contact' },
-        { id: 8, label: 'Donate', path: 'https://www.paypal.com/paypalme/KingdomHarvestNow?country.x=US&locale.x=en_US' },
+        { id: 3, label: 'Services', path: '/services' },
+        { id: 4, label: 'Gallery', path: '/gallery' },
+        { id: 4, label: 'Contact', path: '/contact' },
     ];
     const toggle = e => {
         e.stopPropagation();
@@ -36,7 +34,7 @@ function Nav() {
             <h1 className={styles.logo}>
                 <Link href='/'>
                     {/* <Image src={logo} width={60} height={60} alt='Benjamin Karmon Sehkar Foundation' tabIndex='1' /> */}
-                    Kingdom Harvest Ministries
+                    House of Leevean
                 </Link>
             </h1>
             {windowWidth > targetWidth ? (
@@ -59,19 +57,13 @@ function Nav() {
                                 <Link href='/about-us' passHref><a onClick={toggle}>About Us</a></Link>
                             </li>
                             <li>
-                                <Link href='/youth-ministries' passHref><a onClick={toggle}>Youth ministries</a></Link>
+                                <Link href='/youth-ministries' passHref><a onClick={toggle}>Services</a></Link>
                             </li>
                             <li>
-                                <Link href='/women-ministries' passHref><a onClick={toggle}>Women ministries</a></Link>
-                            </li>
-                            <li>
-                                <Link href='/giving' passHref><a onClick={toggle}>Giving</a></Link>
+                                <Link href='/women-ministries' passHref><a onClick={toggle}>Gallery</a></Link>
                             </li>
                             <li>
                                 <Link href='/contact' passHref><a onClick={toggle}>Contact</a></Link>
-                            </li>
-                            <li>
-                                <Link target='_blank' rel="noreferrer" passHref href='https://www.paypal.com/paypalme/KingdomHarvestNow?country.x=US&locale.x=en_US'><a onClick={toggle}>Donate</a></Link>
                             </li>
                         </ul>
 

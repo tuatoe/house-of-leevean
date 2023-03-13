@@ -3,14 +3,14 @@ import Head from 'next/head'
 import PageHero from '../components/PageHero';
 
 
-const About = () => {
+const Gallery = () => {
     <Head>
-        <title>About us</title>
-        <meta name='keywords' content='About House of Leevean' />
+        <title>Gallery</title>
+        <meta name='keywords' content='Gallery' />
     </Head>
     return (
         <>
-            <PageHero title='About us' />
+            <PageHero title='Gallery' />
             <div className='container page'>
                 <h2 className='page-title hidden-desktop'>House of Leevean</h2>
             </div>
@@ -18,4 +18,4 @@ const About = () => {
     )
 }
 
-export default About;
+export default Gallery;
